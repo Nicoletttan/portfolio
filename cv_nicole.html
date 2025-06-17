@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nicole Tan | Digital Creative</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    /* TikTok Section Styles */
+    .tiktok-section {
+      max-width: 700px;
+      margin: 2.5rem auto 0 auto;
+      padding: 0 1rem;
+    }
+    .tiktok-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      justify-content: center;
+    }
+    .tiktok-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      padding: 0.5rem 0.5rem 0 0.5rem;
+      max-width: 325px;
+      min-width: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .tiktok-card blockquote {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background: none;
+      box-shadow: none;
+    }
+    @media (max-width: 600px) {
+      .projects-youtube,
+      .projects-grid {
+        max-width: 100%;
+        margin: 1rem 0 0 0;
+      }
+      .card-youtube,
+      .card {
+        padding: 0.7rem;
+      }
+    }
+    @media (max-width: 700px) {
+      .skills {
+        gap: 10px;
+        max-width: 100%;
+      }
+      .card {
+        min-width: 140px;
+        max-width: 100%;
+        padding: 8px 10px;
+        font-size: 0.98em;
+      }
+      .card svg {
+        width: 20px;
+        height: 20px;
+      }
+      .tiktok-row {
+        gap: 10px;
+      }
+      .tiktok-card {
+        min-width: 160px;
+        max-width: 100%;
+        padding: 0.3rem 0.3rem 0 0.3rem;
+      }
+    }
+    @media (max-width: 900px) {
+      .tiktok-section {
+        max-width: 100%;
+      }
+      .tiktok-row {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .tiktok-card {
+        max-width: 100%;
+        min-width: 0;
+        padding: 0.3rem 0.3rem 0 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nicole Tan</h1>
+    <p>Digital Marketing Strategist & Content Creator</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I'm a digital creative with a passion for storytelling, trends, and engaging Gen Z audiences through content strategy, video editing, and social media. I create bilingual (EN/FIN) campaigns and enjoy blending tech with creativity – including using AI tools to generate ideas and recipes.
+    </p>
+  </section>
+
+  <section>
+  <h2>Projects</h2>
+  <style>
+    .projects-youtube {
+      max-width: 900px;
+      margin: 1.5rem auto 0 auto;
+    }
+    .card-youtube {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      min-width: 0;
+      width: 100%;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      margin-top: 0.5rem;
+      border-radius:
