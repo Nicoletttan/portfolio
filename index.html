@@ -11,11 +11,23 @@
       background: #f8f8f8;
       color: #333;
     }
-    header {
-      background: #1a1a1a;
+        header {
+      background: #1a1a1a url('assets/Karategirl_crop.jpg') center center/cover no-repeat;
       color: #fff;
       padding: 2rem;
       text-align: center;
+      position: relative;
+    }
+        header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(26,26,26,0.55);
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
     }
     section {
       padding: 2rem;
@@ -139,7 +151,7 @@
   <div style="flex: 2;">
     <h2>About Me</h2>
     <p>
-      I'm a digital creative with a passion for storytelling, trends, and engaging Gen Z audiences through content strategy, video editing, and social media. I create bilingual (EN/FIN) campaigns and enjoy blending tech with creativity – including using AI tools to generate ideas and recipes.
+      I'm a digital creative with a passion for storytelling, trends, and engaging Gen Z audiences through content strategy, video editing, and social media. I create bilingual (EN/FIN) campaigns and enjoy blending tech with creativity.
     </p>
   </div>
   <div style="flex: 1; text-align: right;">
@@ -363,13 +375,7 @@
   }
   </style>
   <div class="skills">
-    <div class="card">
-      <!-- Chart Bar Icon for SEO & Analytics -->
-      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2M8 17V9m4 8V5m4 12v-3"/>
-      </svg>
-      SEO & Analytics
-    </div>
+    
     <div class="card">
       <!-- Video Camera Icon for Video Content Creation -->
       <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -420,12 +426,19 @@
       </svg>
       Web Design (Wordpress, Squarespace)
     </div>
+    <div class="card">
+      <!-- Chart Bar Icon for SEO & Analytics -->
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 17v2a2 2 0 002 2h14a2 2 0 002-2v-2M8 17V9m4 8V5m4 12v-3"/>
+      </svg>
+      SEO & Analytics
+    </div>
   </div>
 </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>Email: <a href="mailto:nicoletwyie@gmail.com">nicoletwyie@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/nicoletanwy27/" target="_blank">https://www.linkedin.com/in/nicoletanwy27/</a></p>
   </section>
 
